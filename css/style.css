@@ -1,0 +1,147 @@
+
+.image-container{
+    background-size: cover;
+    height: 100vh;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+    align-self: center;
+    align-content: center;
+}
+
+.form-box h4{
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-box .form-input{
+    position: relative;
+}
+
+.form-box .form-input input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 18px;
+    border: 1px solid black;
+    border-radius: .5 rem;
+    outline: none;
+    background: rgb(195, 205, 211);
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+}
+.form__label{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: black;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+
+.form-box .form-input input:focus + label{
+    top: -.5rem;
+    left: .8rem;
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+.form-box .form-input input:not(:placeholder-shown) + label{
+    top: -.5rem;
+    left: .8rem;
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form-box input[type="checkbox"]:not(:checked) + label:before{
+    background: transparent;
+    border: 2px solid #000;
+    width: 15px;
+    height: 15px;
+}
+
+.form-box button[type="submit"]{
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 40px;
+    border-right: 5px;
+    background-color: rgb(28, 88, 199);
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+.form-box button[type="submit"]:hover{
+    box-shadow: 0 0 30px rgba(8, 53, 175, 0.87);
+    -webkit-box-shadow: 0 0 30px rgba(8, 53, 175, 0.87);
+    -moz-box-shadow: 0 0 30px rgba(8, 53, 175, 0.87);
+}
+
+.form-box .btn-social{
+    color: white;
+    border: none;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.form-box .btn-google{
+    background: rgba(224, 19, 19, 0.973);
+}
+.form-box .btn-facebook{
+    background: rgba(10, 21, 161, 0.829);
+}
+.form-box .btn-yahoo{
+    background: rgba(149, 9, 184, 0.973);
+}
+
+.form-box .btn-google:hover{
+    box-shadow: 0 0 15px rgba(216, 60, 60, 0.945);
+    -webkit-box-shadow: 0 0 15px rgba(216, 60, 60, 0.945);
+    -moz-box-shadow: 0 0 15px rgba(216, 60, 60, 0.945);
+}
+
+.form-box .btn-facebook:hover{
+    box-shadow: 0 0 15px rgba(86, 96, 240, 0.945);
+    -webkit-box-shadow: 0 0 15px rgba(86, 96, 240, 0.945);
+    -moz-box-shadow: 0 0 15px rgba(86, 96, 240, 0.945);
+}
+
+.form-box .btn-yahoo:hover{
+    box-shadow: 0 0 15px rgba(160, 65, 189, 0.938);
+    -webkit-box-shadow: 0 0 15px rgba(160, 65, 189, 0.938);
+    -moz-box-shadow: 0 0 15px rgba(160, 65, 189, 0.938);
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.0);
+}
